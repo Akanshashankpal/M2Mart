@@ -1,23 +1,23 @@
 import React from 'react';
 
 const posters = [
-  {
-    img: 'https://img.freepik.com/free-photo/fruit-texture-concept-composition_52683-101074.jpg?t=st=1743961978~exp=1743965578~hmac=53218df85f23bee6295d25f031d8a759d495c8c417960357ba5087ded87389f1&w=740git',
-    title: 'Items on SALE',
-    subtitle: 'Discounts up to 30%',
-  },
-  {
-    img: 'https://themewagon.github.io/organic/images/banner-ad-2.jpg',
-    title: 'Combo offers',
-    subtitle: 'Discounts up to 50%',
-  },
-  {
-    img: 'https://themewagon.github.io/organic/images/banner-ad-3.jpg',
-    title: 'Discount Coupons',
-    subtitle: 'Discounts up to 40%',
-  },
-];
-
+    {
+      img: 'https://img.freepik.com/free-photo/fruit-texture-concept-composition_52683-101074.jpg?t=st=1743961978~exp=1743965578~hmac=53218df85f23bee6295d25f031d8a759d495c8c417960357ba5087ded87389f1&w=740',
+      title: 'Items on SALE',
+      subtitle: 'Discounts up to 30%',
+    },
+    {
+      img: 'https://themewagon.github.io/organic/images/banner-ad-2.jpg',
+      title: 'Combo offers',
+      subtitle: 'Discounts up to 50%',
+    },
+    {
+      img: 'https://themewagon.github.io/organic/images/banner-ad-3.jpg',
+      title: 'Discount Coupons',
+      subtitle: 'Discounts up to 40%',
+    },
+  ];
+  
 const PromoPosters = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
