@@ -1,15 +1,15 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React from 'react'
+import { Route, Routes, Navigate } from 'react-router-dom'
+
 import LoginPopup from './LoginPopup';
 
-const Login = () => {
-    return (
-        <div>
-            <Routes>
-                <Route path='/*/login' element={<LoginPopup/>}/>
-            </Routes>
-        </div>
-    );
+function Login() {
+  return (
+    <Routes>
+        <Route path="/login" element={<LoginPopup />} />
+        <Route path='/*' element={<Navigate to="/login" replace />} />
+    </Routes>
+  )
 }
 
 export default Login;
