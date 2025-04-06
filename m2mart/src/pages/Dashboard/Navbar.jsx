@@ -12,13 +12,13 @@ const Navbar = () => {
 
   return (
     <header className="w-full shadow-md bg-white">
-      <nav className="flex flex-wrap items-center justify-between p-4 max-w-7xl mx-auto">
-        {/* Logo with Basket Icon */}
+      <nav className="flex flex-wrap items-center justify-between p-4 max-w-7xl mx-auto fixed bg-white w-full z-50">
+        {/* Logo */}
         <div className="flex items-center gap-2 text-green-600">
           <h1 className="text-2xl font-bold">M2Mart</h1>
         </div>
 
-        {/* Hamburger Icon for Mobile */}
+        {/* Hamburger Icon */}
         <div className="block md:hidden">
           <FaBars
             className="text-2xl cursor-pointer text-gray-700"
@@ -57,16 +57,21 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Desktop Icons */}
+        {/* Desktop Icons + Login Button */}
         <div className="hidden md:flex items-center gap-4 text-xl text-gray-700">
           <FaRegBookmark className="hover:text-green-600 transition" />
           <FaPrint className="hover:text-green-600 transition" />
+          {/* ✅ Login Button */}
+          <button className="ml-4 px-4 py-1 text-sm font-medium text-white bg-green-600 hover:bg-green-700 rounded">
+            Login
+          </button>
         </div>
       </nav>
 
       {/* Mobile Dropdown Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-4">
+        <div className="md:hidden px-4 pb-4 space-y-4 pt-2">
+          {/* Mobile Search */}
           <div className="flex items-center gap-2">
             <select className="border border-gray-300 rounded px-2 py-1 text-sm w-1/3">
               <option>All Categories</option>
@@ -84,6 +89,7 @@ const Navbar = () => {
             </div>
           </div>
 
+          {/* Mobile Nav Links */}
           <ul className="flex flex-col gap-2 text-sm font-medium">
             <li>
               <a href="#" className="block text-gray-800 hover:text-green-600 transition">Home</a>
@@ -94,9 +100,14 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="flex justify-start gap-6 text-xl text-gray-700">
+          {/* Mobile Icons + Login Button */}
+          <div className="flex flex-wrap items-center gap-4 text-xl text-gray-700">
             <FaRegBookmark />
             <FaPrint />
+            {/* ✅ Mobile Login Button */}
+            <button className="mt-2 px-4 py-1 text-sm font-medium text-white bg-green-600 hover:bg-green-700 rounded">
+              Login
+            </button>
           </div>
         </div>
       )}

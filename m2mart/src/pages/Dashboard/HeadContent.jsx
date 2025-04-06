@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLeaf, FaRotate, FaTruck } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const HeadContent = () => {
   return (
@@ -14,9 +15,11 @@ const HeadContent = () => {
         <p className="mt-4 text-white text-base">Naturally fresh, beautifully delivered.</p>
 
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <Link to={'/home'}>
           <button className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition">
             START SHOPPING
           </button>
+          </Link>
           <button className="bg-gray-200 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-300 transition">
             JOIN NOW
           </button>

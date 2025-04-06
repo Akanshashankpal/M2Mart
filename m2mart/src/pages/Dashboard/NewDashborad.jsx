@@ -4,8 +4,8 @@ import LandingPage from './LandingPage';
 
 const NewDashborad = () => {
     return (
-        <div>
-            <Navbar/>
+        <div >
+            <Navbar /> <br /> <br /> <br />
             <LandingPage/>
         </div>
     );

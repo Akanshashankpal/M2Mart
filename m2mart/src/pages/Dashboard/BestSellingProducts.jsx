@@ -82,21 +82,12 @@ const products = [
     rating: 5,
     reviews: 222,
   },
-  {
-    id: 9,
-    name: "Greek Style Plain Yogurt",
-    image: "https://themewagon.github.io/organic/images/product-thumb-10.png",
-    oldPrice: 24,
-    newPrice: 18,
-    discount: "10% off",
-    rating: 5,
-    reviews: 222,
-  },
+  
 ];
 
 const BestSellingProducts = () => {
   return (
-    <div className="py-8 px-4 max-w-screen-xl mx-auto">
+    <div className="py-8 px-4 max-w-screen-xl mx-auto bg-gray-100">
       <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
         <h1 className="text-2xl font-bold text-gray-800">Best Selling Products</h1>
         <button className="mt-2 sm:mt-0 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition">View All</button>
